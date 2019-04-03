@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Looper;
 import android.os.Message;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Handler mThreadHandler;
 
+    private Looper mThreadLooper;
+
     private HandlerThread mHandlerThread;
 
     @Override
@@ -45,7 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mHandlerThread = new HandlerThread(THREAD_NAME);
         mHandlerThread.start();
 
-        mThreadHandler = new Handler(mHandlerThread.getLooper(), new Handler.Callback() {
+        mThreadLooper = mHandlerThread.getLooper();
+
+        mThreadHandler = new Handler(mThreadLooper, new Handler.Callback() {
             @Override
             public boolean handleMessage(Message msg) {
                 switch (msg.what) {
@@ -69,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onDestroy() {
         super.onDestroy();
         mMainHandler.removeCallbacksAndMessages(null);
+        mThreadLooper.quit();
     }
 
     @Override
