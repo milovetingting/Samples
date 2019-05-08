@@ -1,31 +1,31 @@
-# ×é¼ş»¯¿ª·¢µÄÖ÷Òª²½Öè£º
+# ç»„ä»¶åŒ–å¼€å‘çš„ä¸»è¦æ­¥éª¤ï¼š
 
-### Ò»¡¢ĞÂ½¨Modules
+### ä¸€ã€æ–°å»ºModules
 
-1¡¢ĞÂ½¨Project,×÷ÎªÓ¦ÓÃµÄÖ÷Module¡£
+1ã€æ–°å»ºProject,ä½œä¸ºåº”ç”¨çš„ä¸»Moduleã€‚
 
-2¡¢ĞÂ½¨Module:"Common"£¬ÀàĞÍÑ¡Ôñ"Android Library",×÷ÎªËùÓĞÆäËüModuleµÄ»ù´¡ÒÀÀµ¿â¡£
+2ã€æ–°å»ºModule:"Common"ï¼Œç±»å‹é€‰æ‹©"Android Library",ä½œä¸ºæ‰€æœ‰å…¶å®ƒModuleçš„åŸºç¡€ä¾èµ–åº“ã€‚
 
-3¡¢ĞÂ½¨Module:"Home"£¬ÀàĞÍÑ¡Ôñ"Android Library",ÒÀÀµ"Common"¡£
+3ã€æ–°å»ºModule:"Home"ï¼Œç±»å‹é€‰æ‹©"Android Library",ä¾èµ–"Common"ã€‚
 
-4¡¢ĞÂ½¨Module:"Project"£¬ÀàĞÍÑ¡Ôñ"Android Library",ÒÀÀµ"Common"¡£
+4ã€æ–°å»ºModule:"Project"ï¼Œç±»å‹é€‰æ‹©"Android Library",ä¾èµ–"Common"ã€‚
 
-5¡¢ĞÂ½¨Module:"User"£¬ÀàĞÍÑ¡Ôñ"Android Library",ÒÀÀµ"Common"¡£
+5ã€æ–°å»ºModule:"User"ï¼Œç±»å‹é€‰æ‹©"Android Library",ä¾èµ–"Common"ã€‚
 
-**¾ßÌåĞÂ½¨ÔõÑùµÄModule£¬¿ÉÒÔ¸ù¾İÊµ¼ÊÒµÎñÀ´µ÷Õû¡£ÕâÀïÑ¡ÔñĞÂ½¨"Home"¡¢"Project"¡¢"User"À´Ä£ÄâÒµÎñ¡£**
+**å…·ä½“æ–°å»ºæ€æ ·çš„Moduleï¼Œå¯ä»¥æ ¹æ®å®é™…ä¸šåŠ¡æ¥è°ƒæ•´ã€‚è¿™é‡Œé€‰æ‹©æ–°å»º"Home"ã€"Project"ã€"User"æ¥æ¨¡æ‹Ÿä¸šåŠ¡ã€‚**
 
-### ¶ş¡¢Ôö¼ÓFlagÒÔ±ãÔÚreleaseºÍdebugÄ£Ê½ÏÂÇĞ»»
+### äºŒã€å¢åŠ Flagä»¥ä¾¿åœ¨releaseå’Œdebugæ¨¡å¼ä¸‹åˆ‡æ¢
 
-**1¡¢ÔÚgradle.propertiesÎÄ¼şÖĞÔö¼ÓÒ»¸ö±äÁ¿**
+**1ã€åœ¨gradle.propertiesæ–‡ä»¶ä¸­å¢åŠ ä¸€ä¸ªå˜é‡**
 
     isDebug = false
 
 ![flag.png](https://upload-images.jianshu.io/upload_images/3381990-ba4cca25a5fa0501.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**µ±isDebugÎªtrueÊ±£¬ÎªDebugÄ£Ê½£¬ÆäËüµÄModule¿ÉÒÔ×÷Îªµ¥¶ÀµÄAppÔËĞĞ¡£µ±isDebugÎªfalseÊ±£¬ÎªReleaseÄ£Ê½£¬ÆäËüµÄModuleÎªLibraryÄ£Ê½£¬²»ÄÜµ¥¶ÀÔËĞĞ,´ËÊ±Ö»ÓĞÖ÷App¿ÉÒÔÔËĞĞ¡£**
+**å½“isDebugä¸ºtrueæ—¶ï¼Œä¸ºDebugæ¨¡å¼ï¼Œå…¶å®ƒçš„Moduleå¯ä»¥ä½œä¸ºå•ç‹¬çš„Appè¿è¡Œã€‚å½“isDebugä¸ºfalseæ—¶ï¼Œä¸ºReleaseæ¨¡å¼ï¼Œå…¶å®ƒçš„Moduleä¸ºLibraryæ¨¡å¼ï¼Œä¸èƒ½å•ç‹¬è¿è¡Œ,æ­¤æ—¶åªæœ‰ä¸»Appå¯ä»¥è¿è¡Œã€‚**
 
-**2¡¢ĞŞ¸ÄappµÄbuild.gradleÎÄ¼ş**
+**2ã€ä¿®æ”¹appçš„build.gradleæ–‡ä»¶**
 
     implementation project(':common')
     if (!isDebug.toBoolean()) {
@@ -37,7 +37,7 @@
 ![app_flag.png](https://upload-images.jianshu.io/upload_images/3381990-527cfa0ff9e9e29b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**3¡¢ĞŞ¸ÄhomeµÄbuild.gradleÎÄ¼ş**
+**3ã€ä¿®æ”¹homeçš„build.gradleæ–‡ä»¶**
 
     if (isDebug.toBoolean()) {
 	    apply plugin: 'com.android.application'
@@ -48,7 +48,7 @@
 ![home_flag.png](https://upload-images.jianshu.io/upload_images/3381990-772b26caf4703d31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**4¡¢ĞŞ¸ÄprojectµÄbuild.gradleÎÄ¼ş**
+**4ã€ä¿®æ”¹projectçš„build.gradleæ–‡ä»¶**
 
     if (isDebug.toBoolean()) {
 	    apply plugin: 'com.android.application'
@@ -59,7 +59,7 @@
 ![project_flag.png](https://upload-images.jianshu.io/upload_images/3381990-7c724ab1c7beb40c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**5¡¢ĞŞ¸ÄuserµÄbuild.gradleÎÄ¼ş**
+**5ã€ä¿®æ”¹userçš„build.gradleæ–‡ä»¶**
 
     if (isDebug.toBoolean()) {
 	    apply plugin: 'com.android.application'
@@ -70,46 +70,49 @@
 ![user_flag.png](https://upload-images.jianshu.io/upload_images/3381990-b259028ccc40ef1c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-### Îª±ãÓÚ¸÷Moduleµ¥¶Àµ÷ÊÔ¿ª·¢£¬¿ÉÒÔÔÚ¸÷ModuleÏÂ¸ù¾İisDebugµÄ±äÁ¿Çø·ÖÄ£Ê½¡£
+### ä¸ºä¾¿äºå„Moduleå•ç‹¬è°ƒè¯•å¼€å‘ï¼Œå¯ä»¥åœ¨å„Moduleä¸‹æ ¹æ®isDebugçš„å˜é‡åŒºåˆ†æ¨¡å¼ã€‚
 
-ÇĞ»»¹¤³Ìµ½ProjectÄ£Ê½ÏÂ£¬½«Ô­À´µÄAndroidManifest.xmlÎÄ¼şÒÆ³ı£¬ÔÚModuleµÄsrcÄ¿Â¼ÏÂĞÂ½¨debugºÍreleaseÄ¿Â¼£¬ÔÚĞÂ½¨µÄÁ½¸öÄ¿Â¼ÏÂ£¬·Ö±ğĞÂ½¨AndroidManifest.xmlÎÄ¼ş¡£ÒÔHomeÄ£¿éÎªÀı£º
+åˆ‡æ¢å·¥ç¨‹åˆ°Projectæ¨¡å¼ä¸‹ï¼Œå°†åŸæ¥çš„AndroidManifest.xmlæ–‡ä»¶ç§»é™¤ï¼Œåœ¨Moduleçš„src/mainç›®å½•ä¸‹æ–°å»ºdebugå’Œreleaseç›®å½•ï¼Œåœ¨æ–°å»ºçš„ä¸¤ä¸ªç›®å½•ä¸‹ï¼Œåˆ†åˆ«æ–°å»ºAndroidManifest.xmlæ–‡ä»¶ã€‚ä»¥Homeæ¨¡å—ä¸ºä¾‹ï¼š
 
-![home_manifest.png](https://upload-images.jianshu.io/upload_images/3381990-859a2e9d3286e5cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
-**DebugÄ£Ê½ÏÂµÄAndroidManifest.xml**
-
-![home_debug_manifest.png](https://upload-images.jianshu.io/upload_images/3381990-e908c187b36f0479.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![home_manifest.png](https://upload-images.jianshu.io/upload_images/3381990-85ee5234672c7be1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**ReleaseÄ£Ê½ÏÂµÄAndroidManifest.mxl**
+**Debugæ¨¡å¼ä¸‹çš„AndroidManifest.xml**
 
-![home_release_manifest.png](https://upload-images.jianshu.io/upload_images/3381990-d77a62d53186f828.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![home_debug_manifest.png](https://upload-images.jianshu.io/upload_images/3381990-8d84500c05cab634.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-ÔÚHomeÏÂµÄbuild.gradleÎÄ¼şÖĞÅäÖÃAndroidManifest.xml
+
+**Releaseæ¨¡å¼ä¸‹çš„AndroidManifest.mxl**
+
+![home_release_manifest.png](https://upload-images.jianshu.io/upload_images/3381990-2aa10846d0282257.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+åœ¨Homeä¸‹çš„build.gradleæ–‡ä»¶ä¸­é…ç½®AndroidManifest.xml
 
     sourceSets {
         main {
             if (isDebug.toBoolean()) {
-                manifest.srcFile 'src/debug/AndroidManifest.xml'
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
             } else {
-                manifest.srcFile 'src/release/AndroidManifest.xml'
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
                 java { exclude 'debug/**' }
             }
         }
     }
 
 
-![home_gradle_source.png](https://upload-images.jianshu.io/upload_images/3381990-a4ab6113a8372490.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![home_gradle_source.png](https://upload-images.jianshu.io/upload_images/3381990-ef2ee8ba22ec1efc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-ÆäËüModuleÒ²ÊÇÏàËÆµÄ´¦Àí¡£
+
+å…¶å®ƒModuleä¹Ÿæ˜¯ç›¸ä¼¼çš„å¤„ç†ã€‚
 
 
-### Èı¡¢Í³Ò»¹ÜÀíModule°æ±¾ºÅ
+### ä¸‰ã€ç»Ÿä¸€ç®¡ç†Moduleç‰ˆæœ¬å·
 
-1¡¢Îª±ãÓÚÍ³Ò»¹ÜÀí°æ±¾ºÅ£¬ÔÚÏîÄ¿µÄ¸ùÄ¿Â¼ÏÂµÄbuild.gradleÎÄ¼şÖĞÔö¼ÓÍ³Ò»µÄ°æ±¾ºÅ:
+1ã€ä¸ºä¾¿äºç»Ÿä¸€ç®¡ç†ç‰ˆæœ¬å·ï¼Œåœ¨é¡¹ç›®çš„æ ¹ç›®å½•ä¸‹çš„build.gradleæ–‡ä»¶ä¸­å¢åŠ ç»Ÿä¸€çš„ç‰ˆæœ¬å·:
 
     ext {
 	    compileSdkVersion = 28
@@ -123,51 +126,51 @@
 ![version.png](https://upload-images.jianshu.io/upload_images/3381990-d9f695ecf08c0158.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-2¡¢ÔÚÆäËüModuleÏÂÏàÓ¦ĞŞ¸Ä
+2ã€åœ¨å…¶å®ƒModuleä¸‹ç›¸åº”ä¿®æ”¹
 
-**AppÄ£¿é:**
+**Appæ¨¡å—:**
 
 ![app_version.png](https://upload-images.jianshu.io/upload_images/3381990-1189de646a14b7cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**CommonÄ£¿é:**
+**Commonæ¨¡å—:**
 
 ![common_version.png](https://upload-images.jianshu.io/upload_images/3381990-3cf02be42e527ff3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**HomeÄ£¿é:**
+**Homeæ¨¡å—:**
 
 ![home_version.png](https://upload-images.jianshu.io/upload_images/3381990-002f4c055092b0c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**ProjectÄ£¿é:**
+**Projectæ¨¡å—:**
 
 ![project_version.png](https://upload-images.jianshu.io/upload_images/3381990-4b83cc48cbef2858.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**UserÄ£¿é:**
+**Useræ¨¡å—:**
 
 ![user_version.png](https://upload-images.jianshu.io/upload_images/3381990-d109a2ccaebf2d05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-### ËÄ¡¢¸÷Module¼äÍ¨ĞÅ
+### å››ã€å„Moduleé—´é€šä¿¡
 
-Îª½â¾ö¸÷Module¼äÍ¨ĞÅµÄÎÊÌâ£¬ÒıÈëARouter¿ò¼Ü¡£GitHubµØÖ·£º[ARouter](https://github.com/alibaba/ARouter "ARouter")
+ä¸ºè§£å†³å„Moduleé—´é€šä¿¡çš„é—®é¢˜ï¼Œå¼•å…¥ARouteræ¡†æ¶ã€‚GitHubåœ°å€ï¼š[ARouter](https://github.com/alibaba/ARouter "ARouter")
 
-Îª±ÜÃâ¸÷ModuleÖØ¸´ÒıÓÃ£¬ÔÚCommonÖĞÒıÓÃÒ»´Î£¬ÆäËüModule¸´ÓÃ¼´¿É¡£
+ä¸ºé¿å…å„Moduleé‡å¤å¼•ç”¨ï¼Œåœ¨Commonä¸­å¼•ç”¨ä¸€æ¬¡ï¼Œå…¶å®ƒModuleå¤ç”¨å³å¯ã€‚
 
 ![common_arouter.png](https://upload-images.jianshu.io/upload_images/3381990-63ca33cec654c55c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**×¢Òâ£ºÓÉÓÚÆäËüÒÀÀµCommonµÄModuleÒ²ĞèÒªÊ¹ÓÃArouter£¬Òò´ËÔÚÒıÈëÊ±£¬ĞèÒª°Ñimplementation¸ÄÎªapi¡£Èç¹ûÊ¹ÓÃimplementation,ÆäËüModule»áÎŞ·¨Ê¹ÓÃArouter¡£**
+**æ³¨æ„ï¼šç”±äºå…¶å®ƒä¾èµ–Commonçš„Moduleä¹Ÿéœ€è¦ä½¿ç”¨Arouterï¼Œå› æ­¤åœ¨å¼•å…¥æ—¶ï¼Œéœ€è¦æŠŠimplementationæ”¹ä¸ºapiã€‚å¦‚æœä½¿ç”¨implementation,å…¶å®ƒModuleä¼šæ— æ³•ä½¿ç”¨Arouterã€‚**
 
-ÆäËüModuleÖĞÊ¹ÓÃ:
+å…¶å®ƒModuleä¸­ä½¿ç”¨:
 
-²»ĞèÒªÔÙ´Îimplementation,µ«ÊÇ»¹ÊÇĞèÒªÔÚdependenciesÔö¼Ó
+ä¸éœ€è¦å†æ¬¡implementation,ä½†æ˜¯è¿˜æ˜¯éœ€è¦åœ¨dependencieså¢åŠ 
 
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
 
-ÒÔ¼°ÔÚandroid-defaultConfigÖĞÔö¼Ó£º
+ä»¥åŠåœ¨android-defaultConfigä¸­å¢åŠ ï¼š
 
 	javaCompileOptions {
             annotationProcessorOptions {
@@ -175,12 +178,12 @@
             }
         }    
 
-×¢Òâ£º"AROUTER_MODULE_NAME"Õâ¸öÃû³Æ£¬²»¿ÉÒÔ¸ÄÎªÆäËü×Ö·û´®£¬·ñÔò»á±àÒë±¨´í¡£
+æ³¨æ„ï¼š"AROUTER_MODULE_NAME"è¿™ä¸ªåç§°ï¼Œä¸å¯ä»¥æ”¹ä¸ºå…¶å®ƒå­—ç¬¦ä¸²ï¼Œå¦åˆ™ä¼šç¼–è¯‘æŠ¥é”™ã€‚
 
 ![home_arouter.png](https://upload-images.jianshu.io/upload_images/3381990-c274f6834a4c0c00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-ÔÚCommonÄ£¿éÏÂÔö¼ÓBaseApplication,¶ÔARouter½øĞĞ³õÊ¼»¯¡£
+åœ¨Commonæ¨¡å—ä¸‹å¢åŠ BaseApplication,å¯¹ARouterè¿›è¡Œåˆå§‹åŒ–ã€‚
 
     public class BaseApplication extends Application {
 
@@ -198,7 +201,7 @@
 	    }
 	}
 
-ÔÚÖ÷Module:AppÖĞÔö¼ÓApp,¼Ì³Ğ×ÔBaseApplication,È»ºóÔÚAndroidManifefst.xmlÖĞÒıÓÃ¡£
+åœ¨ä¸»Module:Appä¸­å¢åŠ App,ç»§æ‰¿è‡ªBaseApplication,ç„¶ååœ¨AndroidManifefst.xmlä¸­å¼•ç”¨ã€‚
 
 >    `public class App extends BaseApplication {}`
 
@@ -227,14 +230,14 @@
 	    </application>
 	</manifest>
 
-¶ÔÓÚĞèÒª±»µ÷ÓÃµÄActivity»òÕßFragmentÔö¼Ó×¢½â£º
+å¯¹äºéœ€è¦è¢«è°ƒç”¨çš„Activityæˆ–è€…Fragmentå¢åŠ æ³¨è§£ï¼š
 
 ![home_route.png](https://upload-images.jianshu.io/upload_images/3381990-9fe806ab55f395f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-**¿ÉÒÔĞÂ½¨Ò»¸ö³£Á¿Àà£¬ÓÃÀ´±£´æÕâĞ©Â·ÓÉµØÖ·¡£ÕâÀï³öÓÚ¼ò»¯£¬Ã»ÓĞÔÙ¶¨ÒåÕâ¸ö³£Á¿Àà¡£**
+**å¯ä»¥æ–°å»ºä¸€ä¸ªå¸¸é‡ç±»ï¼Œç”¨æ¥ä¿å­˜è¿™äº›è·¯ç”±åœ°å€ã€‚è¿™é‡Œå‡ºäºç®€åŒ–ï¼Œæ²¡æœ‰å†å®šä¹‰è¿™ä¸ªå¸¸é‡ç±»ã€‚**
 
-#### µ÷ÓÃ·½Ê¹ÓÃARouter£º
+#### è°ƒç”¨æ–¹ä½¿ç”¨ARouterï¼š
 
     Fragment fragment = (Fragment) ARouter.getInstance().build("/home/fragment").navigation();
     mFragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
@@ -242,11 +245,11 @@
 ![app_arouter.png](https://upload-images.jianshu.io/upload_images/3381990-1486accfe0e539c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-### Îå¡¢ButterKnifeµÄÒıÈë
+### äº”ã€ButterKnifeçš„å¼•å…¥
 
-ButterKnifeÔÚµ¥ModuleÖĞÊ¹ÓÃÊ±£¬±È½Ï¼òµ¥£¬µ±ÔÚ¶àModuleÏÂÊ¹ÓÃÊ±£¬»¹ÊÇÓĞĞ©ĞèÒª×¢ÒâµÄÊÂÏî¡£¾ßÌåÒıÓÃ²½ÖèÈçÏÂ:
+ButterKnifeåœ¨å•Moduleä¸­ä½¿ç”¨æ—¶ï¼Œæ¯”è¾ƒç®€å•ï¼Œå½“åœ¨å¤šModuleä¸‹ä½¿ç”¨æ—¶ï¼Œè¿˜æ˜¯æœ‰äº›éœ€è¦æ³¨æ„çš„äº‹é¡¹ã€‚å…·ä½“å¼•ç”¨æ­¥éª¤å¦‚ä¸‹:
 
-**1¡¢ÔÚÏîÄ¿¸ùÄ¿Â¼µÄbuild.gradleÖĞÒıÈëÒÀÀµ:**
+**1ã€åœ¨é¡¹ç›®æ ¹ç›®å½•çš„build.gradleä¸­å¼•å…¥ä¾èµ–:**
 
 	dependencies {
 	        classpath 'com.android.tools.build:gradle:3.1.4'
@@ -259,7 +262,7 @@ ButterKnifeÔÚµ¥ModuleÖĞÊ¹ÓÃÊ±£¬±È½Ï¼òµ¥£¬µ±ÔÚ¶àModuleÏÂÊ¹ÓÃÊ±£¬»¹ÊÇÓĞĞ©ĞèÒª×¢Òâµ
 ![root_gradle.png](https://upload-images.jianshu.io/upload_images/3381990-3a9be6f741385005.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-ÔÚcommonÖĞÒıÈëÒÀÀµ:
+åœ¨commonä¸­å¼•å…¥ä¾èµ–:
 
     api 'com.jakewharton:butterknife:9.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
@@ -267,7 +270,7 @@ ButterKnifeÔÚµ¥ModuleÖĞÊ¹ÓÃÊ±£¬±È½Ï¼òµ¥£¬µ±ÔÚ¶àModuleÏÂÊ¹ÓÃÊ±£¬»¹ÊÇÓĞĞ©ĞèÒª×¢Òâµ
 ![common_butterknife.png](https://upload-images.jianshu.io/upload_images/3381990-8baa5b8a03e8d093.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-ÔÚ¾ßÌåÊ¹ÓÃButterKnifeµÄModuleÖĞÒıÈëÒÀÀµ:
+åœ¨å…·ä½“ä½¿ç”¨ButterKnifeçš„Moduleä¸­å¼•å…¥ä¾èµ–:
 
     apply plugin: 'com.jakewharton.butterknife'
 	
@@ -280,25 +283,24 @@ ButterKnifeÔÚµ¥ModuleÖĞÊ¹ÓÃÊ±£¬±È½Ï¼òµ¥£¬µ±ÔÚ¶àModuleÏÂÊ¹ÓÃÊ±£¬»¹ÊÇÓĞĞ©ĞèÒª×¢Òâµ
 ![home_butterknife_2.png](https://upload-images.jianshu.io/upload_images/3381990-ba45575d98034b3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-ºÍARouterÒ»Ñù£¬Ê¹ÓÃButterKnifeµÄModuleËäÈ»²»ÓÃÖØ¸´ÒıÓÃbutterknife±¾ÉíÕâ¸ö¿â£¬µ«ÊÇ×¢½âÏà¹ØµÄ¿â»¹ÊÇĞèÒªÒıÓÃ¡£
+å’ŒARouterä¸€æ ·ï¼Œä½¿ç”¨ButterKnifeçš„Moduleè™½ç„¶ä¸ç”¨é‡å¤å¼•ç”¨butterknifeæœ¬èº«è¿™ä¸ªåº“ï¼Œä½†æ˜¯æ³¨è§£ç›¸å…³çš„åº“è¿˜æ˜¯éœ€è¦å¼•ç”¨ã€‚
 
-¾ßÌåÊ¹ÓÃ£º
+å…·ä½“ä½¿ç”¨ï¼š
 
     @BindView(R2.id.click)
     TextView mText;
 
-**BindViewµÄÊ±ºò£¬ĞèÒªÊ¹ÓÃR2.id.xx**
+**BindViewçš„æ—¶å€™ï¼Œéœ€è¦ä½¿ç”¨R2.id.xx**
 
 	@OnClick(R2.id.click)
     public void click() {
         Toast.makeText(getActivity().getApplicationContext(), "click", Toast.LENGTH_SHORT).show();
     }
 
-**¶ÔÓ¦µÄµã»÷ÊÂ¼şµÈ£¬Èç¹ûÊÇµ¥¸öÊ¹ÓÃ£¬Ò²ÊÇÊ¹ÓÃR2.id.xx¡£Èç¹ûÊÇ¶à¸öidÒ»ÆğÊ¹ÓÃ£¬ÄÚ²¿Í¨¹ıidÀ´ÅĞ¶Ï£¬ÔòĞèÒªÊ¹ÓÃif...else if...£¬²»ÄÜÊ¹ÓÃswitch...case£¬²¢ÇÒifÅĞ¶ÏµÄidĞèÒªÊ¹ÓÃR.id.xx**
+**å¯¹åº”çš„ç‚¹å‡»äº‹ä»¶ç­‰ï¼Œå¦‚æœæ˜¯å•ä¸ªä½¿ç”¨ï¼Œä¹Ÿæ˜¯ä½¿ç”¨R2.id.xxã€‚å¦‚æœæ˜¯å¤šä¸ªidä¸€èµ·ä½¿ç”¨ï¼Œå†…éƒ¨é€šè¿‡idæ¥åˆ¤æ–­ï¼Œåˆ™éœ€è¦ä½¿ç”¨if...else if...ï¼Œä¸èƒ½ä½¿ç”¨switch...caseï¼Œå¹¶ä¸”ifåˆ¤æ–­çš„idéœ€è¦ä½¿ç”¨R.id.xx**
 
-**Ä¬ÈÏÊÇ»á±¨´í£¬ÕÒ²»µ½R2Ïà¹ØµÄclass£¬ĞèÒªÊÖ¶¯buildÒ»´Î²Å»áÉú³É¡£**
+**é»˜è®¤æ˜¯ä¼šæŠ¥é”™ï¼Œæ‰¾ä¸åˆ°R2ç›¸å…³çš„classï¼Œéœ€è¦æ‰‹åŠ¨buildä¸€æ¬¡æ‰ä¼šç”Ÿæˆã€‚**
 
-**×¢Òâ£ºButterKnife.9.0ÒÔºó£¬ĞèÒªjdk°æ±¾1.8ÒÔÉÏ£¬·ñÔò±àÒë»á±¨´í¡£**
+**æ³¨æ„ï¼šButterKnife.9.0ä»¥åï¼Œéœ€è¦jdkç‰ˆæœ¬1.8ä»¥ä¸Šï¼Œå¦åˆ™ç¼–è¯‘ä¼šæŠ¥é”™ã€‚**
 
-
-
+æºç åœ°å€ï¼šhttps://github.com/milovetingting/Samples/tree/master/Modules
