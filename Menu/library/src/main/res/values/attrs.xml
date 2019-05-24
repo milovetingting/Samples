@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomMenu">
+        <attr name="header_text" format="string"></attr>
+        <attr name="header_text_color" format="color"></attr>
+        <attr name="header_bg" format="color"></attr>
+        <attr name="header_height" format="dimension"></attr>
+        <attr name="divider_bg" format="reference"></attr>
+        <attr name="item_bg" format="reference"></attr>
+        <attr name="item_paddingStart" format="dimension"></attr>
+        <attr name="item_textColor" format="color"></attr>
+        <attr name="item_height" format="dimension"></attr>
+    </declare-styleable>
+</resources>

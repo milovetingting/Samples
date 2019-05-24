@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9DDE7">
+
+    <com.wangyz.library.CustomMenu
+        android:id="@+id/dialog_custom_menu2"
+        android:layout_width="@dimen/custom_menu_width"
+        android:layout_height="@dimen/custom_menu_height"
+        custom:divider_bg="@drawable/item_divider"
+        custom:header_bg="@color/custom_menu_head_bg"
+        custom:header_height="@dimen/custom_menu_header_height"
+        custom:header_text="custom"
+        custom:header_text_color="@color/custom_menu_head_color"
+        custom:item_bg="@drawable/item_bg"
+        custom:item_height="@dimen/custom_menu_item_height"
+        custom:item_paddingStart="@dimen/custom_menu_item_paddingStart"
+        custom:item_textColor="@color/menu" />
+
+</LinearLayout>
