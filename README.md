@@ -19,3 +19,7 @@ HandlerThread原理分析及使用Demo
 ### 5、自定义上下文菜单
 
 自定义上下文菜单
+
+### 6、CommonMVVM
+
+MVVM的一个简单例子，包括ListView和RecyclerView.
