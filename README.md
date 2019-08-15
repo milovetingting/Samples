@@ -23,3 +23,7 @@ HandlerThread原理分析及使用Demo
 ### 6、CommonMVVM
 
 MVVM的一个简单例子，包括ListView和RecyclerView.
+
+### 7、MultiChannel
+
+Gradle的多渠道打包。
