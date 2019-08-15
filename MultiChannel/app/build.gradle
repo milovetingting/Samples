@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.wangyz.multichannel"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "default"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String","FIELD_TEST","\"FIELD_TEST\""
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String","FIELD_TEST","\"FIELD_TEST\""
+        }
+    }
+    productFlavors {
+        baidu {
+            applicationIdSuffix ".baidu"
+            manifestPlaceholders = [app_name: "@string/app_name_baidu",app_icon:"@mipmap/icon_baidu", APP_CHANNEL_VALUE: "baidu"]
+        }
+        qq {
+            applicationIdSuffix ".qq"
+            manifestPlaceholders = [app_name: "@string/app_name_qq", app_icon:"@mipmap/icon_qq",APP_CHANNEL_VALUE: "qq"]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}

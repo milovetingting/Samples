@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultiChannel</string>
+    <string name="app_name_baidu">百度渠道</string>
+    <string name="app_name_qq">应用宝渠道</string>
+</resources>
