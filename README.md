@@ -27,3 +27,7 @@ MVVM的一个简单例子，包括ListView和RecyclerView.
 ### 7、MultiChannel
 
 Gradle的多渠道打包。
+
+### 8、AspectJDemo
+
+AOP之AspectJ的简单使用
