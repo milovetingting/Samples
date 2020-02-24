@@ -31,3 +31,11 @@ Gradle的多渠道打包。
 ### 8、AspectJDemo
 
 AOP之AspectJ的简单使用
+
+### 9、HotFix
+
+基于多Dex的多修复的简单使用
+
+### 10、GradlePlugin
+
+Gradle自定义插件
