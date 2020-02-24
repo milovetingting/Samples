@@ -1,0 +1,27 @@
+apply plugin: 'groovy'
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.wangyz.plugins'
+            artifactId 'CustomPlugin'
+            version '1.0.0'
+
+            from components.java
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            url uri('D:\\Repository')
+        }
+    }
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
