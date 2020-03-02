@@ -39,3 +39,7 @@ AOP之AspectJ的简单使用
 ### 10、GradlePlugin
 
 Gradle自定义插件
+
+### 11、Loader
+
+基于接口，通过隔离层，实现解耦的网络请求、图片加载的简单Demo，主要是体验封装的流程、思想
