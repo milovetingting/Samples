@@ -47,3 +47,7 @@ Gradle自定义插件
 ### 12、ViewBinder
 
 基于APT实现的类似ButterKnife的控件绑定的简单Demo。
+
+### 13、插件化的简单Demo
+
+Android中插件化简单实现：启动未注册的Activity
