@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="article"
+            type="com.wangyz.mvvm.bean.Article" />
+
+        <variable
+            name="click"
+            type="com.wangyz.mvvm.view.ArticleFragment.ClickProxy" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_item"
+        android:onClick="@{(view)->click.openArticle(view,article)}"
+        android:padding="@dimen/item_padding">
+
+        <TextView
+            android:id="@+id/item_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@{article.title}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_home_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_home_marginTop"
+            android:gravity="center_vertical"
+            android:text="@{article.author}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_home_title" />
+
+        <TextView
+            android:id="@+id/item_home_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_home_marginTop"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="@{article.category}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_home_author" />
+
+        <TextView
+            android:id="@+id/item_home_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_home_marginTop"
+            android:text="@{article.time}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_home_author" />
+
+        <ImageView
+            android:id="@+id/item_home_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_favorite"
+            app:layout_constraintBottom_toTopOf="@id/item_home_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_home_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

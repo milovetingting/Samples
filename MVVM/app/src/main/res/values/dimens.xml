@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_host_height">60dp</dimen>
+    <dimen name="menu_host_width">200dp</dimen>
+    <dimen name="item_home_marginTop">20dp</dimen>
+    <dimen name="item_radius">5dp</dimen>
+    <dimen name="item_margin">10dp</dimen>
+    <dimen name="item_padding">5dp</dimen>
+    <dimen name="item_stoke_width">0.5dp</dimen>
+    <dimen name="article_title_padding">5dp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/selector_bottom_item_home"
+        android:title="@string/tab_home" />
+    <item
+        android:id="@+id/tab_architecture"
+        android:icon="@drawable/selector_bottom_item_architecture"
+        android:title="@string/tab_architecture" />
+    <item
+        android:id="@+id/tab_project"
+        android:icon="@drawable/selector_bottom_item_project"
+        android:title="@string/tab_project" />
+    <item
+        android:id="@+id/tab_wx"
+        android:icon="@drawable/selector_bottom_item_wx"
+        android:title="@string/tab_wx" />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_nav"
+    app:startDestination="@id/tab_home">
+
+    <fragment
+        android:id="@+id/tab_home"
+        android:name="com.wangyz.mvvm.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/tab_architecture"
+        android:name="com.wangyz.mvvm.view.ArchitectureFragment"
+        android:label="fragment_architecture"
+        tools:layout="@layout/fragment_architecture" />
+    <fragment
+        android:id="@+id/tab_project"
+        android:name="com.wangyz.mvvm.view.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" />
+    <fragment
+        android:id="@+id/tab_wx"
+        android:name="com.wangyz.mvvm.view.WxFragment"
+        android:label="fragment_wx"
+        tools:layout="@layout/fragment_wx" />
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.wangyz.mvvm.view.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" />
+</navigation>

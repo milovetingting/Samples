@@ -63,3 +63,11 @@ Android中插件化简单实现：启动未注册的Activity
 ### 16、Netty
 
 基于Netty实现服务端与客户端通信(进阶):实现服务端下发指令的处理
+
+### 17、Jetpack
+
+Jetpack简单使用
+
+### 18、MVVM
+
+基于MVVM和Jetpack实现的WanAndroid的一个客户端，目前只实现了首页文章获取及文章详情页面，其它的界面待完成。
