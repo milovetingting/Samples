@@ -12,19 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Player player = new PlayerImpl();
-        Player proxy = new ProxyImpl(player);
-        proxy.play();
-
-        DynamicProxy dynamicProxy = new DynamicProxy(player);
-        Player proxy2 = dynamicProxy.getProxy();
-        proxy2.play();
-
-        OtherPlayerImpl player2 = new OtherPlayerImpl();
-        dynamicProxy.setPlayer(player2);
-        proxy2.play();
-
         InjectHelper.inject(this);
     }
 
