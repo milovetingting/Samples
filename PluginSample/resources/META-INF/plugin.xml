@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>com.wangyz.plugins.sample</id>
+    <name>Sample</name>
+    <version>1.0</version>
+    <vendor email="milovetingting@gmail.com" url="http://www.milovetingting.cn">milovetingting</vendor>
+
+    <description>测试插件,啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~</description>
+
+    <change-notes>测试插件,没有更新！啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~啦啦啦~
+    </change-notes>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.wangyz.plugin.hello" class="com.wangyz.plugins.action.Hello"
+                text="com.wangyz.plugins.action.Hello" description="com.wangyz.plugins.action.Hello World!">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt H"/>
+        </action>
+    </actions>
+
+</idea-plugin>
