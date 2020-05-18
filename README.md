@@ -75,3 +75,19 @@ Jetpack简单使用
 ### 19、Proxy
 
 基于动态代理+注解+反射实现的控件点击事件绑定的简单Demo。
+
+### 20、IOC_Runtime
+
+基于IOC实现的运行时注入
+
+### 21、PluginSample
+
+IntelliJ IDEA插件开发
+
+### 22、AntiShake
+
+基于注解和反射实现的防抖Demo
+
+### 23、 CustomView
+
+自定义View,包括FlowLayout,ViewGroup
