@@ -91,3 +91,7 @@ IntelliJ IDEA插件开发
 ### 23、 CustomView
 
 自定义View,包括FlowLayout,ViewGroup
+
+### 24、AQS
+
+对AQS的简单理解及自定义锁的实现
