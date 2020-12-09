@@ -1,0 +1,4 @@
+include ':crash'
+include ':breakpadlib'
+include ':app'
+rootProject.name = "BreakPad"
